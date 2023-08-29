@@ -1,0 +1,16 @@
+bidy {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: aqua;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+}
