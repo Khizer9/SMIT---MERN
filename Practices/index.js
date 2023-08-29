@@ -6,31 +6,30 @@ var password = document.querySelector('#password')
 var submit = document.querySelector('#submit-btn')
 var heading = document.querySelector('.heading')
 
-
+var emailValue = email.value
+var passwordValue = password.value
 submit.addEventListener('click', ()=> {
     
     if(heading.textContent == 'Login'){
-        if(email.value === '' && password.value === ''){
+        if(emailValue === '' && password.value === ''){
             alert('Please fill in all fields')
-        } else if(!email.value.includes('@') || !email.value.includes('.')) {
+        } else if(emailValue.includes('@') || emailValue.includes('.')) {
             alert('Please write valid email address')
         }else {
-            if (signupArray.includes(authArray) === false) {
+            if(signupArray.includes(emailValue + passwordValue) === false){
                 heading.textContent = 'Sign Up'
                 alert('Register yourself!')
-             }else {
-                 authArray.push({
-                     email: email.value,
-                     password: password.value
-                 })
-                 console.log(authArray)
-             }
+            }else {
+                alert('Welcome Back you are logged in')
+            }
         }
-        
     }else if(heading.textContent === 'Sign Up'){
         signupArray.push({
             email: email.value,
             password: password.value
         })
+        heading.textContent = 'Login'
+        alert('Welcome Back you are logged in')
+        console.log(signupArray)
     }
 })
