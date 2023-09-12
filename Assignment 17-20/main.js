@@ -88,3 +88,10 @@
 // for(var i=5; i<=20; i*5){
 //     console.log(i)
 // }
+
+let x = 1
+let y = 2
+
+let res = [x,y] = [y,x]
+
+console.log(res)
