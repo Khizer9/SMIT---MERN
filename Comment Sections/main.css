@@ -1,0 +1,49 @@
+.inputField {grid-area: input;}
+.mainInfo {grid-area: info;}
+.paraInfo {grid-area: para;}
+
+.main {
+    display: grid;
+    grid-template-areas: 'input info' 'input para';
+    gap: 10px;
+    width: 75%;
+    background-color: #efeded;
+    margin: auto;
+    /* display: flex; */
+    flex-direction: column; 
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.mainInfo {
+    display: flex; 
+    align-items: center;
+    width: 100%;
+}
+
+.textInfo {
+    margin-left: 10px; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.mainTitle {
+    margin-left: 30px;
+}
+
+.mainTime {
+    margin-left: 30px;
+    color: #999;
+}
+
+p {
+    margin-top: 10px;
+}
+
