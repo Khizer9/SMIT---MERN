@@ -88,5 +88,7 @@
 // `)
 
 
+let headingValue = document.getElementById('heading')
+console.log(headingValue)
 
-
+console.log(document.querySelectorAll('#heading'))
