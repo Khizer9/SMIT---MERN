@@ -39,6 +39,7 @@ function checkWin() {
         const [a, b, c] = condition;
         if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
             status.innerText = `${currentPlayer} wins!`;
+            alert(`${currentPlayer} wins!`)
             return true;
         }
     }
